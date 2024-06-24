@@ -1,11 +1,11 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
-    z-index: 2;
 }
 
 /* Header styles */
 header {
+    /* TODO: hacer sticky / fixed */
     box-shadow: 0px -6px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -20,10 +20,11 @@ header {
     width: 100%;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     font-family: "Cinzel Decorative", serif;
     font-weight: 700;
+    letter-spacing: 0.15rem;
 }
 
 /* Nav toggle functionality */
@@ -59,11 +60,46 @@ nav ul li a {
 
 /* Main */
 main {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+main img {
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 75vh;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+main h2::first-letter {
+    font-size: 3rem;
+    color: #aa1c1c;
+    border: 1px solid #aa1c1c;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    margin-right: -1rem;
+}
+
+main p {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+main div.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
 }
 
 /* Footer */
 footer {
-    position: fixed;
+    /* TODO: hacer que aparezca de detrás del contenido? */
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -77,8 +113,22 @@ footer {
 }
 
 /* General inline text styles */
-nav a:hover, nav a:focus, main a:hover, main a:focus {
+nav a:hover, nav a:focus,
+main button:hover, main button:focus {
     color: white;
     background-color: #aa1c1c;
-    border-radius: 4%;
+}
+
+button {
+    font-family: 'Gentium Plus', serif;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+::selection {
+    color: white;
+    background-color: #aa1c1c;
 }
