@@ -1,0 +1,84 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Header styles */
+header {
+    box-shadow: 0px -6px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+#header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+#div-h1 {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+}
+
+/* Nav toggle functionality */
+.hidden {
+    display: none;
+
+}
+
+#menu-icon {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 0 1rem 0 0;
+}
+
+/* Nav styles */
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+nav ul li {
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+nav ul li a {
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+/* Main */
+main {
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4rem;
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 700;
+}
+
+/* General inline text styles */
+nav a:hover, nav a:focus, main a:hover, main a:focus {
+    color: white;
+    background-color: #aa1c1c;
+    border-radius: 4%;
+}
