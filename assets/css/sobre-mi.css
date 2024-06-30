@@ -1,0 +1,94 @@
+.author-div {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#author-bio { 
+    background-color: #d38d45;
+    color: white;
+    font-family: 'Gentium Book Plus', serif;
+    position: relative;
+    bottom: 0;
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#author-bio p {
+    margin-bottom: 1rem;
+}
+
+#author-div-img-container {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+#author-div-img {
+    background-image: url(../imgs/Carmen_Ruiz_Gomez_retrato_MG_0170.jpg);
+    background-position: top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        /* display: flex; */
+    }
+
+    h2 {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+
+    .author-div {
+        position:relative;
+        /* display: flex; */
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: start;
+        height: 70vh;
+        width: 90%;
+    }
+
+    #author-bio {
+        position: relative;
+        bottom:0;
+        max-width: 65%;
+        height: fit-content;
+        right: 1rem;
+    }
+
+    #author-div-img {
+        background-image: url(../imgs/Carmen_Ruiz_Gomez_retrato_MG_0170.jpg);
+        background-position: top center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; */
+        overflow: hidden;
+
+        width: 42%;
+        left: 100px;
+        position: relative;
+    }
+}
