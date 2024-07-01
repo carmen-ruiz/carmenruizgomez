@@ -1,4 +1,4 @@
-.author-div-title-desktop {
+#desktop {
     display: none;
 }
 
@@ -6,12 +6,12 @@
     display: inline-block;
 }
 
-.author-div-title-mobile, .author-div-title-desktop {
+.author-div-title {
     margin: 0 auto 3rem;
 }
 
 
-.author-div-title-mobile h3, .author-div-title-desktop h3 {
+.author-div-title h3 {
     font-family: 'Gentium Book Plus', serif;
     text-transform: uppercase;
     border-bottom: 3px dotted #d38d45;
@@ -49,48 +49,39 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .author-div-title-mobile {
+    #mobile {
         display: none;
     }
 
-    .author-div-title-desktop {
-        display: block;
+    #desktop {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
     }
 
     .author-div {
-        display: grid;
-        row-gap: 5rem;
-        column-gap: 3rem;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25%;
-        height: 70vh;
+        display: block;
         width: 100%;
-        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
     }
 
-    .author-div-title {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-
-    #author-div-bio {
-        grid-column: 1;
-        grid-row: 2;
-        height: fit-content;
+    #author-div-bio { 
+        align-self: right;
     }
 
     .author-div-img {
-        grid-column: 2;
-        grid-row: 1 / 4;
+        width: 100%;
     }
 
     #author-img {
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-        margin: 0;
+        max-width: 50vw;
+        max-height: 75vh;
+        /* max-height: 100%; */
+        /* max-width: 100%; */
+        /* object-fit: cover; */
+        /* margin: 0; */
     }
-
 } 

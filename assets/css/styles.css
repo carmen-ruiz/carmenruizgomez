@@ -210,12 +210,13 @@ main .button:hover, main .button:focus  {
 
     /* Main */
     main {
-        max-width: 1500px;
+        width: 100%;
         margin: 0 auto;
-        /* padding: 3rem 3rem ; */
+        padding: 3rem 3rem ;
     }
 
     main .book {
+        max-width: 2000px;
         display: flex;
         gap: 3rem;
         flex-direction: row-reverse;
