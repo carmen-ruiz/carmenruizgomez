@@ -2,6 +2,16 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
 }
 
 /* Header styles */
@@ -108,7 +118,7 @@ main .book div.buttons {
 /* Footer */
 footer {
     /* TODO: hacer que aparezca de detrás del contenido? */
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -187,7 +197,7 @@ main .button:hover, main .button:focus  {
     main {
         max-width: 1500px;
         margin: 0 auto;
-        padding: 3rem 3rem 7rem;
+        /* padding: 3rem 3rem ; */
     }
 
     main .book {
