@@ -28,10 +28,13 @@ h1, h2 {
     letter-spacing: 0.15rem;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 /* Nav toggle functionality */
 .hidden {
     display: none;
-
 }
 
 #menu-icon {
@@ -150,11 +153,40 @@ button {
 /* Media queries for tablet and laptop */
 
 @media only screen and (min-width: 992px) {
+    /* Nav */    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    #header-div {
+        padding: 0;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+    
+    nav {
+        display: block !important;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+
+    /* Main */
     main {
-        padding-right: 3rem;
-        padding-left: 3rem; 
         max-width: 1500px;
         margin: 0 auto;
+        padding: 3rem 3rem 7rem;
     }
 
     main .book {
