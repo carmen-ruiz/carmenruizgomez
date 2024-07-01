@@ -123,12 +123,13 @@ footer {
 
 /* General inline text styles */
 nav a:hover, nav a:focus,
-main button:hover, main button:focus {
+main .button:hover, main .button:focus  {
     color: white;
     background-color: #aa1c1c;
 }
 
-button {
+.button {
+    display: block;
     font-family: 'Gentium Book Plus', serif;
     background-color: transparent;
     border: 1px solid black;
