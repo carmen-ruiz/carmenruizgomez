@@ -233,3 +233,9 @@ main .button:hover, main .button:focus  {
         margin-top: 2rem;
     } 
 }
+
+/* TODO: borrar una vez me cargue esa clase */
+.editorial {
+    color: #aa1c1c;
+    font-weight: bold;
+}
