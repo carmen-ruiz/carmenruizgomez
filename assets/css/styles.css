@@ -71,7 +71,7 @@ h1 {
     position: absolute;
     right: 0;
     cursor: pointer;
-    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
 }
 
 /* Nav styles */
@@ -152,6 +152,7 @@ nav a:hover, nav a:focus,
 main .button:hover, main .button:focus  {
     color: white;
     background-color: #aa1c1c;
+    outline: none;
 }
 
 .button {

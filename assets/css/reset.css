@@ -33,6 +33,8 @@ img, picture, video, canvas, svg {
 */
 input, button, textarea, select {
   font: inherit;
+  background-color: inherit;
+  border: none;
 }
 /*
   7. Avoid text overflows
