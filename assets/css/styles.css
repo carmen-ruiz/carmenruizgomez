@@ -100,6 +100,10 @@ main {
     margin-bottom: 4rem;
 }
 
+main .book:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
 main .book img {
     margin: 0 auto;
     max-width: 100%;
@@ -219,12 +223,17 @@ main .button:hover, main .button:focus  {
     }
 
     main .book {
-        max-width: 2000px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1800px;
         display: flex;
-        gap: 3rem;
-        flex-direction: row-reverse;
+        gap: 5rem;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    main .book:nth-child(odd) {
+        flex-direction: row-reverse;
     }
 
     main .book > div {
@@ -234,10 +243,11 @@ main .button:hover, main .button:focus  {
     main .book h2 {
         margin-top: 2rem;
     } 
-}
 
-/* TODO: borrar una vez me cargue esa clase */
-.editorial {
-    color: #aa1c1c;
-    font-weight: bold;
+    main .book img {
+        height: 75vh;
+        max-height: 50rem;
+        margin: 0;
+        align-self: flex-end;
+    }
 }
